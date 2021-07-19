@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://example.com/</loc>
+     <loc>http://docs.webb.tools/</loc>
      <lastmod>2021-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://example.com/mixer-protocols/tornado/overview/</loc>
+     <loc>http://docs.webb.tools/mixer-protocols/tornado/overview/</loc>
      <lastmod>2021-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://example.com/mixer-protocols/tornado/deployments/</loc>
+     <loc>http://docs.webb.tools/mixer-protocols/tornado/deployments/</loc>
      <lastmod>2021-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://example.com/mixer-protocols/tornado/contracts/</loc>
+     <loc>http://docs.webb.tools/mixer-protocols/tornado/contracts/</loc>
      <lastmod>2021-07-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
