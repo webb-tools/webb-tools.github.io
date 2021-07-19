@@ -1,0 +1,1412 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://example.com/mixer-protocols/tornado/contracts/">
+      
+      
+      <link rel="shortcut icon" href="../../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-5.0.0b2">
+    
+    
+      
+        <title>Contracts - Webb Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/app.0f079138.min.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/app-palette.3f90c815.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    
+      <a href="#contracts" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://example.com/" title="Webb Docs" aria-label="Webb Docs" class="md-header-nav__button md-logo">
+          
+            <img src="../../../img/webb-icon.svg" width="24" height="24" alt="logo">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="header-title">
+          
+            <span class="md-header-nav__topic">
+              Webb Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Contracts
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="search-reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../overview/" class="md-tabs__link md-tabs__link--active">
+          Mixer protocols
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://example.com/" title="Webb Docs" class="md-nav__button md-logo">
+      
+        <img src="../../../img/webb-icon.svg" width="48" height="48" alt="logo">
+      
+    </a>
+    Webb Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Mixer protocols
+    </label>
+    <nav class="md-nav" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Mixer protocols
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Tornado Core
+    </label>
+    <nav class="md-nav" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Tornado Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deployments/" title="Deployments" class="md-nav__link">
+      Deployments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Contracts
+      </label>
+    
+    <a href="./" title="Contracts" class="md-nav__link md-nav__link--active">
+      Contracts
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ihasher" class="md-nav__link">
+    IHasher
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mimcsponge" class="md-nav__link">
+    MiMCSponge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iverifier" class="md-nav__link">
+    IVerifier
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifyproof" class="md-nav__link">
+    verifyProof
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contracts_1" class="md-nav__link">
+    Contracts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nativeanchorsol" class="md-nav__link">
+    NativeAnchor.sol
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-functions" class="md-nav__link">
+    Internal Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_processwithdraw" class="md-nav__link">
+    _processWithdraw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_processdeposit" class="md-nav__link">
+    _processDeposit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anchorsol" class="md-nav__link">
+    Anchor.sol
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifier" class="md-nav__link">
+    verifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denomination" class="md-nav__link">
+    denomination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nullifierhashes" class="md-nav__link">
+    nullifierHashes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commitments" class="md-nav__link">
+    commitments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructor_1" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-functions" class="md-nav__link">
+    External Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-functions" class="md-nav__link">
+    View Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isspent" class="md-nav__link">
+    isSpent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isspentarray" class="md-nav__link">
+    isSpentArray
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit_1" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw_1" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merkletreewithhistorysol" class="md-nav__link">
+    MerkleTreeWithHistory.sol
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hasher" class="md-nav__link">
+    hasher
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels" class="md-nav__link">
+    levels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filledsubtrees" class="md-nav__link">
+    filledSubtrees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roots" class="md-nav__link">
+    roots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root_history_size" class="md-nav__link">
+    ROOT_HISTORY_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currentrootindex" class="md-nav__link">
+    currentRootIndex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextindex" class="md-nav__link">
+    nextIndex
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructor_2" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-functions_1" class="md-nav__link">
+    External Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hashleftright" class="md-nav__link">
+    hashLeftRight
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-functions_1" class="md-nav__link">
+    View Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isknownroot" class="md-nav__link">
+    isKnownRoot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlastroot" class="md-nav__link">
+    getLastRoot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeros" class="md-nav__link">
+    zeros
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-functions_1" class="md-nav__link">
+    Internal Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_insert" class="md-nav__link">
+    _insert
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ihasher" class="md-nav__link">
+    IHasher
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mimcsponge" class="md-nav__link">
+    MiMCSponge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iverifier" class="md-nav__link">
+    IVerifier
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifyproof" class="md-nav__link">
+    verifyProof
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contracts_1" class="md-nav__link">
+    Contracts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nativeanchorsol" class="md-nav__link">
+    NativeAnchor.sol
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-functions" class="md-nav__link">
+    Internal Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_processwithdraw" class="md-nav__link">
+    _processWithdraw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_processdeposit" class="md-nav__link">
+    _processDeposit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anchorsol" class="md-nav__link">
+    Anchor.sol
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifier" class="md-nav__link">
+    verifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denomination" class="md-nav__link">
+    denomination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nullifierhashes" class="md-nav__link">
+    nullifierHashes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commitments" class="md-nav__link">
+    commitments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructor_1" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-functions" class="md-nav__link">
+    External Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-functions" class="md-nav__link">
+    View Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isspent" class="md-nav__link">
+    isSpent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isspentarray" class="md-nav__link">
+    isSpentArray
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit_1" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw_1" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merkletreewithhistorysol" class="md-nav__link">
+    MerkleTreeWithHistory.sol
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hasher" class="md-nav__link">
+    hasher
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels" class="md-nav__link">
+    levels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filledsubtrees" class="md-nav__link">
+    filledSubtrees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roots" class="md-nav__link">
+    roots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root_history_size" class="md-nav__link">
+    ROOT_HISTORY_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currentrootindex" class="md-nav__link">
+    currentRootIndex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextindex" class="md-nav__link">
+    nextIndex
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructor_2" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-functions_1" class="md-nav__link">
+    External Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hashleftright" class="md-nav__link">
+    hashLeftRight
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-functions_1" class="md-nav__link">
+    View Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isknownroot" class="md-nav__link">
+    isKnownRoot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlastroot" class="md-nav__link">
+    getLastRoot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeros" class="md-nav__link">
+    zeros
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-functions_1" class="md-nav__link">
+    Internal Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_insert" class="md-nav__link">
+    _insert
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="contracts">Contracts</h1>
+<p>The exposed APIs of tornado.cash-based solidity mixers for developer use.</p>
+<h2 id="interfaces">Interfaces</h2>
+<h3 id="ihasher">IHasher</h3>
+<p>The hasher for contracts in tornado core uses MiMC. It is generated from circom's <a href="https://github.com/iden3/circomlib/blob/master/src/mimcsponge_gencontract.js">mimcsponge_gencontract.js</a></p>
+<h4 id="mimcsponge">MiMCSponge</h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>MiMCSponge(uint256 in_xL, uint256 in_xR) external pure returns (uint256 xL, uint256 xR)</code></p>
+</details>
+<h3 id="iverifier">IVerifier</h3>
+<p>The verifier exposes the <code>verifyProof</code> view function and is generated from the verifying key for the corresponding SNARK.</p>
+<h4 id="verifyproof">verifyProof</h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>verifyProof(bytes memory _proof, uint256[6] memory _input) external returns (bool)</code></p>
+</details>
+<h2 id="contracts_1">Contracts</h2>
+<h3 id="nativeanchorsol">NativeAnchor.sol</h3>
+<p>A concrete instance of a mixer which deals with the native currency of the chain.</p>
+<h4 id="constructor">Constructor</h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>constructor(IVerifier _verifier, IHasher _hasher, uint256 _denomination, uint256 _merkleTreeHeight) Anchor(_verifier, _hasher, _denomination, _merkleTreeHeight) {}</code></p>
+</details>
+<h4 id="internal-functions">Internal Functions</h4>
+<h5 id="_processwithdraw">_processWithdraw</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>_processWithdraw(address _recipient, address _relayer, uint256 _fee, uint256 _refund) internal override</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(msg.value == 0)</li>
+<li>require(_refund == 0)</li>
+<li>require(..., "payment to _recipient did not go through")</li>
+<li>require(..., "payment to _relayer did not go through")</li>
+</ul>
+</details>
+<h5 id="_processdeposit">_processDeposit</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>_processDeposit() internal override</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(msg.value == denomination)</li>
+</ul>
+</details>
+<h3 id="anchorsol">Anchor.sol</h3>
+<p>An abstract contract that requires child classes to implement appropriate verification and processes for deposits and withdrawals.</p>
+<h4 id="variables">Variables</h4>
+<h5 id="verifier">verifier</h5>
+<p><strong>Type:</strong> <code>public immutable IVerifier</code></p>
+<h5 id="denomination">denomination</h5>
+<p><strong>Type:</strong> <code>public immutable uint32</code></p>
+<h5 id="nullifierhashes">nullifierHashes</h5>
+<p><strong>Type:</strong> <code>public mapping(bytes32 =&gt; bool)</code></p>
+<h5 id="commitments">commitments</h5>
+<p><strong>Type:</strong> <code>public mapping(bytes32 =&gt; bool)</code></p>
+<h4 id="constructor_1">Constructor</h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>constructor(IVerifier _verifier, IHasher _hasher, uint256 _denomination, uint256 _treeHeight) MerkleTreeWithHistory(_merkleTreeHeight, _hasher)</code></p>
+</details>
+<h4 id="external-functions">External Functions</h4>
+<p>Calls to deposits require a commitment, which is a hash of some secret values. </p>
+<h5 id="deposit">Deposit</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>deposit(bytes32 _commitment)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(..., "commitment has been submitted")</li>
+</ul>
+<p><strong>Emits</strong></p>
+<p>Deposit</p>
+</details>
+<h5 id="withdraw">Withdraw</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>withdraw(address _recipient, address _relayer, uint256 _fee, uint256 _refund)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(_fee &lt;= denomination)</li>
+<li>require(..., "The not has already been spent")</li>
+<li>require(..., "Cannot find your merkle root")</li>
+<li>require(..., "Invalid withdraw proof")</li>
+</ul>
+<p><strong>Emits</strong></p>
+<p>Withdraw</p>
+</details>
+<h4 id="view-functions">View Functions</h4>
+<h5 id="isspent">isSpent</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>isSpent(bytes32 _nullifierHash) public view returns (bool)</code></p>
+</details>
+<h5 id="isspentarray">isSpentArray</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>isSpentArray(bytes32[] calldata _nullifierHashes) external view returns (bool[] memory spent)</code></p>
+</details>
+<h4 id="events">Events</h4>
+<h5 id="deposit_1">Deposit</h5>
+<p><strong>Signature</strong>: <code>Deposit(bytes32 indexed commitment, uint32 leafIndex, uint256 timestamp)</code></p>
+<h5 id="withdraw_1">Withdraw</h5>
+<p><strong>Signature</strong>: <code>Withdrawal(address to, bytes32 nullifierHash, address indexed relayer, uint256 fee)</code></p>
+<h3 id="merkletreewithhistorysol">MerkleTreeWithHistory.sol</h3>
+<h4 id="variables_1">Variables</h4>
+<h5 id="hasher">hasher</h5>
+<p><strong>Type:</strong> <code>public immutable IHasher</code></p>
+<h5 id="levels">levels</h5>
+<p><strong>Type:</strong> <code>public immutable uint32</code></p>
+<h5 id="filledsubtrees">filledSubtrees</h5>
+<p><strong>Type:</strong> <code>public mapping(uint256 =&gt; bytes32)</code></p>
+<h5 id="roots">roots</h5>
+<p><strong>Type:</strong> <code>public mapping(uint256 =&gt; bytes32)</code></p>
+<h5 id="root_history_size">ROOT_HISTORY_SIZE</h5>
+<p><strong>Type:</strong> <code>public constant uint32</code></p>
+<h5 id="currentrootindex">currentRootIndex</h5>
+<p><strong>Type:</strong> <code>public uint32</code></p>
+<h5 id="nextindex">nextIndex</h5>
+<p><strong>Type:</strong> <code>public uint32</code></p>
+<h4 id="constructor_2">Constructor</h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>constructor(uint32 _levels, IHasher _hasher)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(_levels &gt; 0)</li>
+<li>require(_levels &lt; 32)</li>
+</ul>
+</details>
+<h4 id="external-functions_1">External Functions</h4>
+<h5 id="hashleftright">hashLeftRight</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>function hashLeftRight(IHasher _hasher, bytes32 _left, bytes32 _right) public pure returns (bytes32)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(..., "_left should be inside the field")</li>
+<li>require(..., "_right should be instide the field")</li>
+</ul>
+</details>
+<h4 id="view-functions_1">View Functions</h4>
+<h5 id="isknownroot">isKnownRoot</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>isKnownRoot(bytes32 _root) public view returns (bool)</code></p>
+</details>
+<h5 id="getlastroot">getLastRoot</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>getLastRoot() public view returns (bytes32)</code></p>
+</details>
+<h5 id="zeros">zeros</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>zeros(uint256 i) public pure returns (bytes32)</code></p>
+</details>
+<h4 id="internal-functions_1">Internal Functions</h4>
+<h5 id="_insert">_insert</h5>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>_insert(bytes32 _leaf) internal returns (uint32 index)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(..., "merkle tree is full")</li>
+</ul>
+</details>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../deployments/" title="Deployments" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Deployments
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">
+          MkDocs
+        </a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/bundle.bd6ef04a.min.js"></script>
+      <script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.language": "en", "search.pipeline.stopwords": "True", "search.pipeline.trimmer": "True", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.tokenizer": "[\\s\\-]+"}
+      </script>
+      <script>
+        app = initialize({
+          base: "../../..",
+          worker: {
+            search: "../../../assets/javascripts/worker/search.926ffd9e.min.js"
+          },
+          feature: {
+            instant: false
+          }
+        });
+      </script>
+      
+    
+  </body>
+</html>
