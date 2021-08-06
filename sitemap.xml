@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://docs.webb.tools/</loc>
-     <lastmod>2021-07-27</lastmod>
+     <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.webb.tools/mixer-protocols/tornado/overview/</loc>
-     <lastmod>2021-07-27</lastmod>
+     <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.webb.tools/mixer-protocols/tornado/deployments/</loc>
-     <lastmod>2021-07-27</lastmod>
+     <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.webb.tools/mixer-protocols/tornado/contracts/</loc>
-     <lastmod>2021-07-27</lastmod>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.webb.tools/relayer/overview/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.webb.tools/relayer/http-endpoints/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.webb.tools/relayer/websockets/</loc>
+     <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
