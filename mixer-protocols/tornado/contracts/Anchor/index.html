@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://docs.webb.tools/mixer-protocols/tornado/deployments/">
+        <link rel="canonical" href="https://docs.webb.tools/mixer-protocols/tornado/contracts/Anchor/">
       
-      <link rel="icon" href="../../../img/favicon.png">
+      <link rel="icon" href="../../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.3">
     
     
       
-        <title>Deployments - Webb Docs</title>
+        <title>Anchor - Webb Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.f7f47774.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -59,7 +59,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="blue">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mixer-deployments" class="md-skip">
+        <a href="#anchorsol" class="md-skip">
           Skip to content
         </a>
       
@@ -78,9 +78,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Webb Docs" class="md-header__button md-logo" aria-label="Webb Docs" data-md-component="logo">
+    <a href="../../../.." title="Webb Docs" class="md-header__button md-logo" aria-label="Webb Docs" data-md-component="logo">
       
-  <img src="../../../img/webb-icon.svg" alt="logo">
+  <img src="../../../../img/webb-icon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deployments
+              Anchor
             
           </span>
         </div>
@@ -161,9 +161,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Webb Docs" class="md-nav__button md-logo" aria-label="Webb Docs" data-md-component="logo">
+    <a href="../../../.." title="Webb Docs" class="md-nav__button md-logo" aria-label="Webb Docs" data-md-component="logo">
       
-  <img src="../../../img/webb-icon.svg" alt="logo">
+  <img src="../../../../img/webb-icon.svg" alt="logo">
 
     </a>
     Webb Docs
@@ -202,7 +202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -260,12 +260,47 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         Overview
       </a>
     </li>
   
 
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployments/" class="md-nav__link">
+        Deployments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2_1_3" type="checkbox" id="__nav_1_2_1_3" checked>
+      
+      <label class="md-nav__link" for="__nav_1_2_1_3">
+        Contracts
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Contracts" data-md-level="4">
+        <label class="md-nav__title" for="__nav_1_2_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Contracts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
   
@@ -282,12 +317,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Deployments
+          Anchor
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Deployments
+        Anchor
       </a>
       
         
@@ -305,23 +340,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rinkeby" class="md-nav__link">
-    Rinkeby
+  <a href="#description" class="md-nav__link">
+    Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#harmony-testnet-shard-1" class="md-nav__link">
-    Harmony Testnet Shard 1
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifier" class="md-nav__link">
+    verifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denomination" class="md-nav__link">
+    denomination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nullifierhashes" class="md-nav__link">
+    nullifierHashes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commitments" class="md-nav__link">
+    commitments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#beresheet-evm" class="md-nav__link">
-    Beresheet EVM
+  <a href="#external-functions" class="md-nav__link">
+    External Functions
   </a>
+  
+    <nav class="md-nav" aria-label="External Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-functions" class="md-nav__link">
+    View Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="View Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isspent" class="md-nav__link">
+    isSpent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isspentarray" class="md-nav__link">
+    isSpentArray
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit_1" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw_1" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -337,41 +487,8 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2_1_3" type="checkbox" id="__nav_1_2_1_3" >
-      
-      <label class="md-nav__link" for="__nav_1_2_1_3">
-        Contracts
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Contracts" data-md-level="4">
-        <label class="md-nav__title" for="__nav_1_2_1_3">
-          <span class="md-nav__icon md-icon"></span>
-          Contracts
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../contracts/Anchor/" class="md-nav__link">
-        Anchor
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contracts/IHasher/" class="md-nav__link">
+      <a href="../IHasher/" class="md-nav__link">
         IHasher
       </a>
     </li>
@@ -383,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/IVerifier/" class="md-nav__link">
+      <a href="../IVerifier/" class="md-nav__link">
         IVerifier
       </a>
     </li>
@@ -395,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/MerkleTreeWithHistory/" class="md-nav__link">
+      <a href="../MerkleTreeWithHistory/" class="md-nav__link">
         MerkleTreeWithHistory
       </a>
     </li>
@@ -407,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/NativeAnchor/" class="md-nav__link">
+      <a href="../NativeAnchor/" class="md-nav__link">
         NativeAnchor
       </a>
     </li>
@@ -458,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/overview/" class="md-nav__link">
+      <a href="../../../../relayer/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -470,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/http-endpoints/" class="md-nav__link">
+      <a href="../../../../relayer/http-endpoints/" class="md-nav__link">
         Http Endpoints
       </a>
     </li>
@@ -482,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/websockets/" class="md-nav__link">
+      <a href="../../../../relayer/websockets/" class="md-nav__link">
         WebSockets
       </a>
     </li>
@@ -527,23 +644,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rinkeby" class="md-nav__link">
-    Rinkeby
+  <a href="#description" class="md-nav__link">
+    Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#harmony-testnet-shard-1" class="md-nav__link">
-    Harmony Testnet Shard 1
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verifier" class="md-nav__link">
+    verifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denomination" class="md-nav__link">
+    denomination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nullifierhashes" class="md-nav__link">
+    nullifierHashes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commitments" class="md-nav__link">
+    commitments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#beresheet-evm" class="md-nav__link">
-    Beresheet EVM
+  <a href="#external-functions" class="md-nav__link">
+    External Functions
   </a>
+  
+    <nav class="md-nav" aria-label="External Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-functions" class="md-nav__link">
+    View Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="View Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isspent" class="md-nav__link">
+    isSpent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isspentarray" class="md-nav__link">
+    isSpentArray
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deposit_1" class="md-nav__link">
+    Deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withdraw_1" class="md-nav__link">
+    Withdraw
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -560,105 +792,61 @@
               
                 
                 
-                <h1 id="mixer-deployments">Mixer Deployments<a class="headerlink" href="#mixer-deployments" title="Permanent link">&para;</a></h1>
-<p>If you'd like to interact with the mixers programmatically, we have live deployments at the contracts below.</p>
-<h3 id="rinkeby">Rinkeby<a class="headerlink" href="#rinkeby" title="Permanent link">&para;</a></h3>
-<table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
-<tr>
-    <td>.1 ETH Mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x626FEc5Ffa7Bf1EE8CEd7daBdE545630473E3ABb">0x626FEc5Ffa7Bf1EE8CEd7daBdE545630473E3ABb</a>
-    </td>
-</tr>
-<tr>
-    <td>1 ETH Mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x979cBd4917e81447983ef87591B9E1ab21727a61">0x979cBd4917e81447983ef87591B9E1ab21727a61</a>
-    </td>
-</tr>
-<tr>
-    <td>Hasher</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/build/Hasher.json">Hasher.json</a></td>
-    <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xE6C5D1c6cc3c6772694d75f61E949daB100a4489">0xE6C5D1c6cc3c6772694d75f61E949daB100a4489</a>
-    </td>
-</tr>
-<tr>
-    <td>Verifier</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/Verifier.sol">Verifier.sol</a></td>
-    <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x95A5CcfCa50F7Dcf410CE397Bb7Becf1b42Ae601">0x95A5CcfCa50F7Dcf410CE397Bb7Becf1b42Ae601</a>
-    </td>
-</tr>
-</table>
-
-<h3 id="harmony-testnet-shard-1">Harmony Testnet Shard 1<a class="headerlink" href="#harmony-testnet-shard-1" title="Permanent link">&para;</a></h3>
-<p>Harmony shares Webb's vision of an interoperable future, and we are happy to have Harmony as one of our first supported chains.</p>
-<table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
-<tr>
-    <td>100 ONE mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://explorer.pops.one/address/0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a?activeTab=0">0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a</a>
-    </td>
-</tr>
-<tr>
-    <td>1000 ONE mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://explorer.pops.one/address/0xD7f9BB9957100310aD397D2bA31771D939BD4731?activeTab=0">0xD7f9BB9957100310aD397D2bA31771D939BD4731</a>
-    </td>
-</tr>
-<tr>
-    <td>10000 ONE mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://explorer.pops.one/address/0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222?activeTab=0">0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222</a>
-    </td>
-</tr>
-<tr>
-    <td>100000 ONE mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://explorer.pops.one/address/0x7cd173094eF78FFAeDee4e14576A73a79aA716ac?activeTab=0">0x7cd173094eF78FFAeDee4e14576A73a79aA716ac</a>
-    </td>
-</tr>
-<tr>
-    <td>Hasher</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/build/Hasher.json">Hasher.json</a></td>
-    <td><a target="_blank" href="https://explorer.pops.one/address/0x96B8Bff1fE9a9c0656b84d7bd1013faD2435Edc0?activeTab=0">0x96B8Bff1fE9a9c0656b84d7bd1013faD2435Edc0</a>
-    </td>
-</tr>
-<tr>
-    <td>Verifier</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/Verifier.sol">Verifier.sol</a></td>
-    <td><a target="_blank" href="https://explorer.pops.one/address/0xca2c45fe334fBb9d9356AaB291842b964DB9B0E3?activeTab=0">0xca2c45fe334fBb9d9356AaB291842b964DB9B0E3</a>
-    </td>
-</tr>
-</table>
-
-<h3 id="beresheet-evm">Beresheet EVM<a class="headerlink" href="#beresheet-evm" title="Permanent link">&para;</a></h3>
-<p>Edgeware is the first supported EVM in the substrate ecosystem. This ecosystem was born out of interoperable ideals.</p>
-<table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
-<tr>
-    <td>100 tEDG mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://polkadot.js.org/apps/#/explorer">0xc0d863EE313636F067dCF89e6ea904AD5f8DEC65</a>
-    </td>
-</tr>
-<tr>
-    <td>1000 tEDG mixer</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/NativeAnchor.sol">NativeAnchor.sol</a></td>
-    <td><a target="_blank" href="https://polkadot.js.org/apps/#/explorer">0xc7c6152214d0Db4e161Fa67fB62811Be7326834A</a>
-    </td>
-</tr>
-<tr>
-    <td>Hasher</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/build/Hasher.json">Hasher.json</a></td>
-    <td><a target="_blank" href="https://polkadot.js.org/apps/#/explorer">0x96B8Bff1fE9a9c0656b84d7bd1013faD2435Edc0</a>
-    </td>
-</tr>
-<tr>
-    <td>Verifier</td>
-    <td><a target="_blank" href="https://github.com/webb-tools/tornado-core/blob/master/contracts/Verifier.sol">Verifier.sol</a></td>
-    <td><a target="_blank" href="https://polkadot.js.org/apps/#/explorer">0xca2c45fe334fBb9d9356AaB291842b964DB9B0E3</a>
-    </td>
-</tr>
-</table>
+                <h1 id="anchorsol">Anchor.sol<a class="headerlink" href="#anchorsol" title="Permanent link">&para;</a></h1>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>An abstract contract that requires child classes to implement appropriate verification and processes for deposits and withdrawals.</p>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<h4 id="verifier">verifier<a class="headerlink" href="#verifier" title="Permanent link">&para;</a></h4>
+<p><strong>Type:</strong> <code>public immutable IVerifier</code></p>
+<h4 id="denomination">denomination<a class="headerlink" href="#denomination" title="Permanent link">&para;</a></h4>
+<p><strong>Type:</strong> <code>public immutable uint32</code></p>
+<h4 id="nullifierhashes">nullifierHashes<a class="headerlink" href="#nullifierhashes" title="Permanent link">&para;</a></h4>
+<p><strong>Type:</strong> <code>public mapping(bytes32 =&gt; bool)</code></p>
+<h4 id="commitments">commitments<a class="headerlink" href="#commitments" title="Permanent link">&para;</a></h4>
+<p><strong>Type:</strong> <code>public mapping(bytes32 =&gt; bool)</code></p>
+<h2 id="constructor">Constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h2>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>constructor(IVerifier _verifier, IHasher _hasher, uint256 _denomination, uint256 _treeHeight) MerkleTreeWithHistory(_merkleTreeHeight, _hasher)</code></p>
+</details>
+<h2 id="external-functions">External Functions<a class="headerlink" href="#external-functions" title="Permanent link">&para;</a></h2>
+<p>Calls to deposits require a commitment, which is a hash of some secret values. </p>
+<h4 id="deposit">Deposit<a class="headerlink" href="#deposit" title="Permanent link">&para;</a></h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>deposit(bytes32 _commitment)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(..., "commitment has been submitted")</li>
+</ul>
+<p><strong>Emits</strong></p>
+<p>Deposit</p>
+</details>
+<h4 id="withdraw">Withdraw<a class="headerlink" href="#withdraw" title="Permanent link">&para;</a></h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>withdraw(address _recipient, address _relayer, uint256 _fee, uint256 _refund)</code></p>
+<p><strong>Requires</strong></p>
+<ul>
+<li>require(_fee &lt;= denomination)</li>
+<li>require(..., "The not has already been spent")</li>
+<li>require(..., "Cannot find your merkle root")</li>
+<li>require(..., "Invalid withdraw proof")</li>
+</ul>
+<p><strong>Emits</strong></p>
+<p>Withdraw</p>
+</details>
+<h2 id="view-functions">View Functions<a class="headerlink" href="#view-functions" title="Permanent link">&para;</a></h2>
+<h4 id="isspent">isSpent<a class="headerlink" href="#isspent" title="Permanent link">&para;</a></h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>isSpent(bytes32 _nullifierHash) public view returns (bool)</code></p>
+</details>
+<h4 id="isspentarray">isSpentArray<a class="headerlink" href="#isspentarray" title="Permanent link">&para;</a></h4>
+<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<p><code>isSpentArray(bytes32[] calldata _nullifierHashes) external view returns (bool[] memory spent)</code></p>
+</details>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h4 id="deposit_1">Deposit<a class="headerlink" href="#deposit_1" title="Permanent link">&para;</a></h4>
+<p><strong>Signature</strong>: <code>Deposit(bytes32 indexed commitment, uint32 leafIndex, uint256 timestamp)</code></p>
+<h4 id="withdraw_1">Withdraw<a class="headerlink" href="#withdraw_1" title="Permanent link">&para;</a></h4>
+<p><strong>Signature</strong>: <code>Withdrawal(address to, bytes32 nullifierHash, address indexed relayer, uint256 fee)</code></p>
                 
               
               
@@ -678,7 +866,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+        <a href="../../deployments/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Deployments" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -687,20 +875,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Overview
+              Deployments
             </div>
           </div>
         </a>
       
       
         
-        <a href="../contracts/Anchor/" class="md-footer__link md-footer__link--next" aria-label="Next: Anchor" rel="next">
+        <a href="../IHasher/" class="md-footer__link md-footer__link--next" aria-label="Next: IHasher" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Anchor
+              IHasher
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -729,10 +917,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.29db7785.min.js"></script>
       
     
   </body>
