@@ -979,7 +979,7 @@ contract = "Anchor"
 address = "0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a"
 deployed-at = 12040000
 size = 100
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -988,7 +988,7 @@ contract = "Anchor"
 address = "0xD7f9BB9957100310aD397D2bA31771D939BD4731"
 deployed-at = 12892487
 size = 1000
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.03
 withdraw-gaslimit = "0x350000"
 
@@ -997,7 +997,7 @@ contract = "Anchor"
 address = "0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222"
 deployed-at = 12892648
 size = 10000
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.02
 withdraw-gaslimit = "0x350000"
 </code></pre>
@@ -1017,7 +1017,7 @@ contract = "Anchor"
 address = "0xf0EA8Fa17daCF79434d10C51941D8Fc24515AbE3"
 deployed-at = 299740
 size = 10
-leaves-watcher = { enabled = true, polling-interval = 7000}
+events-watcher = { enabled = true, polling-interval = 7000}
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1026,7 +1026,7 @@ contract = "Anchor"
 address = "0xc0d863EE313636F067dCF89e6ea904AD5f8DEC65"
 deployed-at = 299740
 size = 100
-leaves-watcher = { enabled = true, polling-interval = 7000}
+events-watcher = { enabled = true, polling-interval = 7000}
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1035,7 +1035,7 @@ contract = "Anchor"
 address = "0xc7c6152214d0Db4e161Fa67fB62811Be7326834A"
 deployed-at = 299740
 size = 1000
-leaves-watcher = { enabled = true, polling-interval = 7000}
+events-watcher = { enabled = true, polling-interval = 7000}
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1044,7 +1044,7 @@ contract = "Anchor"
 address = "0xf0290d80880E3c59512e454E303FcD48f431acA3"
 deployed-at = 299740
 size = 10000
-leaves-watcher = { enabled = true, polling-interval = 7000}
+events-watcher = { enabled = true, polling-interval = 7000}
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1059,7 +1059,7 @@ contract = "Anchor"
 address = "0x4c37863bf2642Ba4e8De7e746500C700540119E8"
 deployed-at = 13600000
 size = 0.0000000001
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1068,7 +1068,7 @@ contract = "Anchor"
 address = "0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a"
 deployed-at = 12040000
 size = 100
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1077,7 +1077,7 @@ contract = "Anchor"
 address = "0xD7f9BB9957100310aD397D2bA31771D939BD4731"
 deployed-at = 12892487
 size = 1000
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1086,7 +1086,7 @@ contract = "Anchor"
 address = "0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222"
 deployed-at = 12892648
 size = 10000
-leaves-watcher = { enabled = true, polling-interval = 3000 }
+events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1101,7 +1101,7 @@ contract = "Anchor"
 address = "0x626FEc5Ffa7Bf1EE8CEd7daBdE545630473E3ABb"
 deployed-at = 8896800
 size = 0.1
-leaves-watcher = { enabled = true, polling-interval = 15000 }
+events-watcher = { enabled = true, polling-interval = 15000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
@@ -1110,7 +1110,7 @@ contract = "Anchor"
 address = "0x979cBd4917e81447983ef87591B9E1ab21727a61"
 deployed-at = 8896800
 size = 1
-leaves-watcher = { enabled = true, polling-interval = 15000 }
+events-watcher = { enabled = true, polling-interval = 15000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 </code></pre>
@@ -1232,7 +1232,11 @@ server {
 </li>
 <li>
 <p>modify the monitrc file at: <code>/etc/monit/monitrc</code></p>
-<pre><code>set daemon 10
+<pre><code>set httpd port 2812 and
+use address localhost
+allow localhost
+
+set daemon 10
 set log /var/log/monit.log
 set idfile /var/lib/monit/id
 set statefile /var/lib/monit/state
