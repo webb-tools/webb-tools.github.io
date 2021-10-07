@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://docs.webb.tools/relayer/setup/">
       
       <link rel="icon" href="../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.2">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.24c991ad.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -1074,16 +1074,14 @@ sudo snap install --classic certbot &amp;&amp; sudo ln -s /snap/bin/certbot /usr
 <li>
 <p>Follow the <a href="" title="https://github.com/webb-tools/relayer/blob/main/README.md">README</a> to create your <code>config.toml</code> for the networks you wish to support.</p>
 <details class="example"><summary>Harmony example configuration</summary><pre><code>port = 9955
-[substrate.webb]
-suri = "//Alice"
 
-[evm.harmony]
+[evm.harmonytestnet1]
 http-endpoint = "https://api.s1.b.hmny.io"
 ws-endpoint = "wss://ws.s1.b.hmny.io"
 private-key = &lt;PRIVATE_KEY_AS_HEX_STRING&gt;
 chain-id = 1666700001
 
-[[evm.harmony.contracts]]
+[[evm.harmonytestnet1.contracts]]
 contract = "Anchor"
 address = "0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a"
 deployed-at = 12040000
@@ -1092,7 +1090,7 @@ events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.05
 withdraw-gaslimit = "0x350000"
 
-[[evm.harmony.contracts]]
+[[evm.harmonytestnet1.contracts]]
 contract = "Anchor"
 address = "0xD7f9BB9957100310aD397D2bA31771D939BD4731"
 deployed-at = 12892487
@@ -1101,7 +1099,7 @@ events-watcher = { enabled = true, polling-interval = 3000 }
 withdraw-fee-percentage = 0.03
 withdraw-gaslimit = "0x350000"
 
-[[evm.harmony.contracts]]
+[[evm.harmonytestnet1.contracts]]
 contract = "Anchor"
 address = "0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222"
 deployed-at = 12892648
@@ -1438,10 +1436,10 @@ check process webb-relayer matching target/release/webb-relayer
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bc35569b.min.js"></script>
       
     
   </body>
