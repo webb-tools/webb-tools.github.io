@@ -852,6 +852,26 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#relayer-configuration" class="md-nav__link">
+    Relayer Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Relayer Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fine-tuned-configuration" class="md-nav__link">
+    Fine-tuned Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#relayer-setup" class="md-nav__link">
     Relayer setup
   </a>
@@ -976,6 +996,26 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#relayer-configuration" class="md-nav__link">
+    Relayer Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Relayer Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fine-tuned-configuration" class="md-nav__link">
+    Fine-tuned Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#relayer-setup" class="md-nav__link">
     Relayer setup
   </a>
@@ -1041,164 +1081,97 @@ source ~/.cargo/env
 
 # Install certbot
 sudo snap install --classic certbot &amp;&amp; sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+# Get the relayer code
+git clone https://github.com/webb-tools/relayer.git
 </code></pre>
+<h3 id="relayer-configuration">Relayer Configuration<a class="headerlink" href="#relayer-configuration" title="Permanent link">&para;</a></h3>
+<p>Create your <code>.env</code> file in the base directory of the project. A list of potential networks to support is defined below.</p>
+<ul>
+<li>Make sure to provide the private key with funds on the appropriate network.</li>
+<li>Remove networks which you do not wish to support from below.</li>
+</ul>
+<details class="example"><summary>List of supported networks .env</summary><pre><code># Mainnets
+WEBB_EVM_HARMONYMAINNET0_ENABLED=true
+WEBB_EVM_SHIDEN_ENABLED=true
+
+HARMONYMAINNET0_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+SHIDEN_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+
+# Testnets
+WEBB_EVM_HARMONYTESTNET0_ENABLED=true
+WEBB_EVM_HARMONYTESTNET1_ENABLED=true
+WEBB_EVM_RINKEBY_ENABLED=true
+WEBB_EVM_GOERLI_ENABLED=true
+WEBB_EVM_ROPSTEN_ENABLED=true
+WEBB_EVM_BERESHEET_ENABLED=true
+
+HARMONYTESTNET0_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+HARMONYTESTNET1_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+RINKEBY_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+GOERLI_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+ROPSTEN_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+BERESHEET_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
+</code></pre>
+</details>
+<h5 id="fine-tuned-configuration">Fine-tuned Configuration<a class="headerlink" href="#fine-tuned-configuration" title="Permanent link">&para;</a></h5>
+<p>All configurations in the repo can be tuned to your preference. Below is a line-by-line explanation of all configurable values for an example configuration supporting Rinkeby:</p>
+<details class="example"><summary>Rinkeby configuration</summary><pre><code>[evm.rinkeby]
+# Endpoints to archival nodes which are running for the given network
+http-endpoint = "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+ws-endpoint = "wss://rinkeby.infura.io/ws/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+# The block explorer of the given network for clickable transactions in relayer logs
+explorer = "https://rinkeby.etherscan.io"
+# The chain-id of the network
+chain-id = 4
+# The hex string private key correlating to a value in the .env file.
+private-key = "$RINKEBY_PRIVATE_KEY"
+
+# A network configuration can define multiple contracts to listen to
+[[evm.rinkeby.contracts]]
+# The 'Tornado' contract is a tornado cash implementation
+contract = "Tornado"
+# The address for the particular contract
+address = "0x626FEc5Ffa7Bf1EE8CEd7daBdE545630473E3ABb"
+# The relayer may query for previous state starting from the deployed-at block until the present block.
+deployed-at = 8896800
+# The denomination for mixers - applicable for 'Tornado' and 'Anchor' contracts
+size = 0.1
+# If the events-watcher is enabled, the relayer will listen for events of this contract and update its own
+# storage. Used for providing leaves to clients that request them, and necessary for integration in the dapp
+events-watcher = { enabled = false, polling-interval = 15000 }
+# The fee defined by the relayer for sending transactions on behalf of clients.
+withdraw-fee-percentage = 0.05
+# Configurable gaslimit for transactions. Set this to a reasonable value for the given chain.
+withdraw-gaslimit = "0x350000"
+
+[[evm.rinkeby.contracts]]
+# An 'Anchor' contract is the building block of the bridge protocol. It provides privacy like a 'Tornado'
+# contract and maintains state for the anchors which link to it for cross-chain functionality.
+contract = "Anchor"
+address = "0x15A66977f0A9D21e09eB6C1B42b001aF992f0C8f"
+deployed-at = 9568750
+size = 0.01
+events-watcher = { enabled = true, polling-interval = 15000 }
+withdraw-fee-percentage = 0
+withdraw-gaslimit = "0x350000"
+# These anchors define the 
+linked-anchors = [
+    { chain = "ropsten", address = "0x0711Ea63FDEDD2c8a9d3C9340a5A8F6cd84b6A92" },
+    { chain = "goerli", address = "0x025348e15e9d5529E5A4A55E8eA7eC923b7fB8b6" },
+]
+
+[[evm.rinkeby.contracts]]
+# The bridge contract is used for transmitting information and updating state of linked anchors.
+# This entry is for controlling the relayer's vote and execute actions on the bridge.
+contract = "Bridge"
+address = "0xdC8Dd9275d900cBCBC7889C1c03Ec658FfE300d2"
+deployed-at = 9568750
+events-watcher = { enabled = true, polling-interval = 15000 }
+</code></pre>
+</details>
 <h3 id="relayer-setup">Relayer setup<a class="headerlink" href="#relayer-setup" title="Permanent link">&para;</a></h3>
 <ol>
-<li>
-<p>Get the relayer code: <code>git clone https://github.com/webb-tools/relayer.git</code></p>
-</li>
-<li>
-<p>Follow the <a href="" title="https://github.com/webb-tools/relayer/blob/main/README.md">README</a> to create your <code>config.toml</code> for the networks you wish to support.</p>
-<details class="example"><summary>Harmony example configuration</summary><pre><code>port = 9955
-
-[evm.harmonytestnet1]
-http-endpoint = "https://api.s1.b.hmny.io"
-ws-endpoint = "wss://ws.s1.b.hmny.io"
-private-key = &lt;PRIVATE_KEY_AS_HEX_STRING&gt;
-chain-id = 1666700001
-
-[[evm.harmonytestnet1.contracts]]
-contract = "Anchor"
-address = "0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a"
-deployed-at = 12040000
-size = 100
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.harmonytestnet1.contracts]]
-contract = "Anchor"
-address = "0xD7f9BB9957100310aD397D2bA31771D939BD4731"
-deployed-at = 12892487
-size = 1000
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.03
-withdraw-gaslimit = "0x350000"
-
-[[evm.harmonytestnet1.contracts]]
-contract = "Anchor"
-address = "0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222"
-deployed-at = 12892648
-size = 10000
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.02
-withdraw-gaslimit = "0x350000"
-</code></pre>
-</details>
-<details class="example"><summary>Full support example configuration</summary><pre><code>port = 9955
-[substrate.webb]
-suri = "//Alice"
-
-[evm.beresheet]
-http-endpoint = "https://beresheet.edgewa.re/evm"
-ws-endpoint = "wss://beresheet1.edgewa.re"
-private-key = &lt;PRIVATE_KEY_AS_HEX_STRING&gt;
-chain-id = 2022
-
-[[evm.beresheet.contracts]]
-contract = "Anchor"
-address = "0xf0EA8Fa17daCF79434d10C51941D8Fc24515AbE3"
-deployed-at = 299740
-size = 10
-events-watcher = { enabled = true, polling-interval = 7000}
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.beresheet.contracts]]
-contract = "Anchor"
-address = "0xc0d863EE313636F067dCF89e6ea904AD5f8DEC65"
-deployed-at = 299740
-size = 100
-events-watcher = { enabled = true, polling-interval = 7000}
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.beresheet.contracts]]
-contract = "Anchor"
-address = "0xc7c6152214d0Db4e161Fa67fB62811Be7326834A"
-deployed-at = 299740
-size = 1000
-events-watcher = { enabled = true, polling-interval = 7000}
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.beresheet.contracts]]
-contract = "Anchor"
-address = "0xf0290d80880E3c59512e454E303FcD48f431acA3"
-deployed-at = 299740
-size = 10000
-events-watcher = { enabled = true, polling-interval = 7000}
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[evm.harmony]
-http-endpoint = "https://api.s1.b.hmny.io"
-ws-endpoint = "wss://ws.s1.b.hmny.io"
-private-key = &lt;PRIVATE_KEY_AS_HEX_STRING&gt;
-chain-id = 1666700001
-
-[[evm.harmony.contracts]]
-contract = "Anchor"
-address = "0x4c37863bf2642Ba4e8De7e746500C700540119E8"
-deployed-at = 13600000
-size = 0.0000000001
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.harmony.contracts]]
-contract = "Anchor"
-address = "0x7cd1F52e5EEdf753e99D945276a725CE533AaD1a"
-deployed-at = 12040000
-size = 100
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.harmony.contracts]]
-contract = "Anchor"
-address = "0xD7f9BB9957100310aD397D2bA31771D939BD4731"
-deployed-at = 12892487
-size = 1000
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.harmony.contracts]]
-contract = "Anchor"
-address = "0xeE2eB8F142e48e5D1bDD34e0924Ed3B4aa0d4222"
-deployed-at = 12892648
-size = 10000
-events-watcher = { enabled = true, polling-interval = 3000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[evm.rinkeby]
-http-endpoint = "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
-ws-endpoint = "wss://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
-private-key = &lt;PRIVATE_KEY_AS_HEX_STRING&gt;
-chain-id = 4
-
-[[evm.rinkeby.contracts]]
-contract = "Anchor"
-address = "0x626FEc5Ffa7Bf1EE8CEd7daBdE545630473E3ABb"
-deployed-at = 8896800
-size = 0.1
-events-watcher = { enabled = true, polling-interval = 15000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-
-[[evm.rinkeby.contracts]]
-contract = "Anchor"
-address = "0x979cBd4917e81447983ef87591B9E1ab21727a61"
-deployed-at = 8896800
-size = 1
-events-watcher = { enabled = true, polling-interval = 15000 }
-withdraw-fee-percentage = 0.05
-withdraw-gaslimit = "0x350000"
-</code></pre>
-</details>
-</li>
 <li>
 <p>Setup the relayer as a system service:</p>
 <pre><code># Create the service file
@@ -1213,7 +1186,7 @@ Description=WebbRelayer
 [Service]
 Type=exec
 WorkingDirectory=/home/&lt;user&gt;/relayer
-ExecStart=/home/&lt;user&gt;/relayer/target/release/webb-relayer -c /home/&lt;user&gt;/relayer/config/config.toml -vvv
+ExecStart=/home/&lt;user&gt;/relayer/target/release/webb-relayer -c /home/&lt;user&gt;/relayer/config/ -vvv
 [Install]
 WantedBy=multi-user.target
 </code></pre>

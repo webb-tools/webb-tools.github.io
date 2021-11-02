@@ -1037,7 +1037,11 @@
 </details>
 <h3 id="evm-mixer-leaves">EVM Mixer Leaves<a class="headerlink" href="#evm-mixer-leaves" title="Permanent link">&para;</a></h3>
 <p>A client can query the relayer for the leaves (commitments) of a mixer deployment. This information is necessary for building the merkle tree on the client side, in order to build the proof of secrets for a particular commitment. The client can query the blockchain directly, but getting the information from a relayer will be much quicker.</p>
-<details class="example"><summary>/api/v1/leaves/:contractAddress</summary><p><strong>Response Format</strong></p>
+<ul>
+<li>chainID: A hex string for the appropriate chain id</li>
+<li>contractAddress: The contract address of the mixer to query</li>
+</ul>
+<details class="example"><summary>/api/v1/leaves/:chainId/:contractAddress</summary><p><strong>Response Format</strong></p>
 <pre><code>{
     "leaves": [
         &lt;hex-string&gt;,
