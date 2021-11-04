@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://docs.webb.tools/bridge-protocols/webb/architecture/">
+        <link rel="canonical" href="https://docs.webb.tools/shielded-pool-protocols/tornado-pool/circuits/merkleProof/">
       
-      <link rel="icon" href="../../../img/favicon.png">
+      <link rel="icon" href="../../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>Architecture - Webb Docs</title>
+        <title>merkleProof.circom - Webb Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -59,7 +59,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="blue">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#definitions" class="md-skip">
+        <a href="#merkleproofcircom" class="md-skip">
           Skip to content
         </a>
       
@@ -80,9 +80,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Webb Docs" class="md-header__button md-logo" aria-label="Webb Docs" data-md-component="logo">
+    <a href="../../../.." title="Webb Docs" class="md-header__button md-logo" aria-label="Webb Docs" data-md-component="logo">
       
-  <img src="../../../img/webb-icon.svg" alt="logo">
+  <img src="../../../../img/webb-icon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architecture
+              merkleProof.circom
             
           </span>
         </div>
@@ -166,9 +166,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Webb Docs" class="md-nav__button md-logo" aria-label="Webb Docs" data-md-component="logo">
+    <a href="../../../.." title="Webb Docs" class="md-nav__button md-logo" aria-label="Webb Docs" data-md-component="logo">
       
-  <img src="../../../img/webb-icon.svg" alt="logo">
+  <img src="../../../../img/webb-icon.svg" alt="logo">
 
     </a>
     Webb Docs
@@ -184,7 +184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -197,14 +197,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -225,14 +223,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
       
       
       
@@ -255,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -267,117 +263,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Architecture
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../bridge-protocols/webb/architecture/" class="md-nav__link">
         Architecture
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#definitions" class="md-nav__link">
-    Definitions
-  </a>
-  
-    <nav class="md-nav" aria-label="Definitions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commitment" class="md-nav__link">
-    commitment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#neighborroots" class="md-nav__link">
-    neighborRoots
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#resourceid" class="md-nav__link">
-    resourceID
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#main-system-components" class="md-nav__link">
-    Main System Components
-  </a>
-  
-    <nav class="md-nav" aria-label="Main System Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#anchor" class="md-nav__link">
-    Anchor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bridge" class="md-nav__link">
-    Bridge
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anchorhandler" class="md-nav__link">
-    AnchorHandler
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#erc20handler" class="md-nav__link">
-    ERC20Handler
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -389,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../technical-roadmap/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/technical-roadmap/" class="md-nav__link">
         Technical Roadmap
       </a>
     </li>
@@ -403,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../governance/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/governance/" class="md-nav__link">
         Governance
       </a>
     </li>
@@ -469,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/overview/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/contracts/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -509,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/Anchor/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/contracts/Anchor/" class="md-nav__link">
         Anchor
       </a>
     </li>
@@ -523,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/AnchorBase/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/contracts/AnchorBase/" class="md-nav__link">
         AnchorBase
       </a>
     </li>
@@ -537,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/LinkableAnchor/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/contracts/LinkableAnchor/" class="md-nav__link">
         LinkableAnchor
       </a>
     </li>
@@ -551,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contracts/MerkleTreeWithHistoryPoseidon/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/contracts/MerkleTreeWithHistoryPoseidon/" class="md-nav__link">
         MerkleTreeWithHistoryPoseidon
       </a>
     </li>
@@ -605,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pallets/overview/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/pallets/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -619,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pallets/overview/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/pallets/overview/" class="md-nav__link">
         Pallets
       </a>
     </li>
@@ -647,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployments/" class="md-nav__link">
+      <a href="../../../../bridge-protocols/webb/deployments/" class="md-nav__link">
         Deployments
       </a>
     </li>
@@ -728,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/overview/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -742,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/deployments/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/deployments/" class="md-nav__link">
         Deployments
       </a>
     </li>
@@ -782,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/contracts/Anchor/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/contracts/Anchor/" class="md-nav__link">
         Anchor
       </a>
     </li>
@@ -796,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/contracts/IHasher/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/contracts/IHasher/" class="md-nav__link">
         IHasher
       </a>
     </li>
@@ -810,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/contracts/IVerifier/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/contracts/IVerifier/" class="md-nav__link">
         IVerifier
       </a>
     </li>
@@ -824,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/contracts/MerkleTreeWithHistory/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/contracts/MerkleTreeWithHistory/" class="md-nav__link">
         MerkleTreeWithHistory
       </a>
     </li>
@@ -838,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mixer-protocols/tornado/contracts/NativeAnchor/" class="md-nav__link">
+      <a href="../../../../mixer-protocols/tornado/contracts/NativeAnchor/" class="md-nav__link">
         NativeAnchor
       </a>
     </li>
@@ -926,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../shielded-pool-protocols/tornado-pool/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -981,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/overview/" class="md-nav__link">
+      <a href="../../../../relayer/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -995,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/setup/" class="md-nav__link">
+      <a href="../../../../relayer/setup/" class="md-nav__link">
         Setup
       </a>
     </li>
@@ -1009,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/http-endpoints/" class="md-nav__link">
+      <a href="../../../../relayer/http-endpoints/" class="md-nav__link">
         Http Endpoints
       </a>
     </li>
@@ -1023,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../relayer/websockets/" class="md-nav__link">
+      <a href="../../../../relayer/websockets/" class="md-nav__link">
         WebSockets
       </a>
     </li>
@@ -1045,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../repos/overview/" class="md-nav__link">
+      <a href="../../../../repos/overview/" class="md-nav__link">
         Organisation Repos
       </a>
     </li>
@@ -1070,6 +960,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1078,77 +970,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definitions" class="md-nav__link">
-    Definitions
+  <a href="#inputs" class="md-nav__link">
+    Inputs
   </a>
-  
-    <nav class="md-nav" aria-label="Definitions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commitment" class="md-nav__link">
-    commitment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#neighborroots" class="md-nav__link">
-    neighborRoots
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#resourceid" class="md-nav__link">
-    resourceID
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#main-system-components" class="md-nav__link">
-    Main System Components
-  </a>
-  
-    <nav class="md-nav" aria-label="Main System Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#anchor" class="md-nav__link">
-    Anchor
+  <a href="#outputs" class="md-nav__link">
+    Outputs
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#bridge" class="md-nav__link">
-    Bridge
+      
+        <li class="md-nav__item">
+  <a href="#sub-gadgets" class="md-nav__link">
+    Sub-Gadgets
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#anchorhandler" class="md-nav__link">
-    AnchorHandler
+      
+        <li class="md-nav__item">
+  <a href="#functionalityhow-it-works" class="md-nav__link">
+    Functionality/How it Works
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#erc20handler" class="md-nav__link">
-    ERC20Handler
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1165,41 +1017,29 @@
               
                 
                 
-                  <h1>Architecture</h1>
-                
-                <p>The Webb protocol architecture is modelled off the ChainBridge and Tornado Cash architectures. We merge and augment both protocols and increase the relayer responsibilities to design our private bridge protocol. The modifications can be summarized as:</p>
-<ul>
-<li>Augmenting Tornado's into Anchor's which additionally track an edge list to other Anchors.<ul>
-<li>Anchors are private transaction systems that function both as Tornados but also as cross-chain bridges.</li>
-<li>Anchors use a zero-knowledge one-of-many merkle tree membership proof instead of one for a single merkle tree.</li>
-<li>Anchors can mint/burn the underlying token being deposited and withdrawn.</li>
-</ul>
-</li>
-<li>Augmenting ChainBridge's Bridge into a private bridge protocol.<ul>
-<li>We create a new AnchorHandler which modifiers the edge list of Anchors needing updates.</li>
-<li>We augment the Bridge relayers w/ a multi-party threshold signing scheme, so that one or many threshold networks can govern the bridge.</li>
-</ul>
-</li>
-</ul>
-<p>Example diagram of the architecture and governance of cross chain private bridging of WEBB tokens on EVM chains:</p>
-<hr />
-<p><img alt="Architecture" src="/img/architecture.png" /></p>
-<h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
-<h3 id="commitment">commitment<a class="headerlink" href="#commitment" title="Permanent link">&para;</a></h3>
-<p>A <code>commitment</code> is generated upon a users deposit into an anchor and later used in a ZK proof for withdrawal. The commitment is the <code>PoseidonHash(DestinationChainID + nullifier + secret)</code>. DestinationChainID is a user input indicating the chain they will withdraw on. </p>
-<h3 id="neighborroots">neighborRoots<a class="headerlink" href="#neighborroots" title="Permanent link">&para;</a></h3>
-<p>Every <code>LinkableAnchor</code> stores its <code>neighborRoots</code>, a mapping containing the merkle roots of the anchors it is connected to. Each anchor stores a history of 30 roots, so users can verify against a historical root while new deposits occur.</p>
-<h3 id="resourceid">resourceID<a class="headerlink" href="#resourceid" title="Permanent link">&para;</a></h3>
-<p><code>resourceID</code>'s provide a chain agnostic identifier to connect tokens with the handlers and anchors that interact with that token. A <code>resourceID</code> for a given token and denomination is defined as the hash of that token name concatenated with its denomination. The <code>resourceID</code> for a token used in public bridging that is not tied to a denomination will simply be the hash of its token name.</p>
-<h2 id="main-system-components">Main System Components<a class="headerlink" href="#main-system-components" title="Permanent link">&para;</a></h2>
-<h3 id="anchor">Anchor<a class="headerlink" href="#anchor" title="Permanent link">&para;</a></h3>
-<p><code>Anchor</code>s are augmented <a href="https://tornado.cash/">Tornado Cash</a> Tornados that possess graph-like data structures and functionality; that is, they can be connected and have edges. Users interact with Anchors through a deposit/withdraw API. To deposit into a Webb Anchor, a user generates a hashed commitment and submits this to the Anchor's merkle tree for insertion. The commitment contains the chainID of the chain they wish to withdraw on as well as some secret data.</p>
-<h3 id="bridge">Bridge<a class="headerlink" href="#bridge" title="Permanent link">&para;</a></h3>
-<p>The <code>Bridge</code> contract allows for both fixed denomination, private bridging and standard, public bridging of assets. The private bridging functionality uses an <code>AnchorHandler</code> to track the state of connected chains while the standard bridging uses an <code>ERC20Handler</code>. The Bridge's state is is maintained by a set of relayers through voting. These relayers vote to update the latest merkle roots of connected anchors in the case of private bridging, and to distribute bridged assets in the case of public bridging.</p>
-<h3 id="anchorhandler">AnchorHandler<a class="headerlink" href="#anchorhandler" title="Permanent link">&para;</a></h3>
-<p>Every <code>Bridge</code> contract has a corresponding <code>AnchorHandler</code> to add or update the <code>neighborRoots</code> of the anchors on that chain after relayers pass and execute a proposals containing connected anchors' root updates. The Handler updates a specific anchor based on a mapping of a <code>resourceID</code> to a <code>LinkableAnchor</code> contract address which is set by the <code>Bridge</code> admin.</p>
-<h3 id="erc20handler">ERC20Handler<a class="headerlink" href="#erc20handler" title="Permanent link">&para;</a></h3>
-<p>Every <code>Bridge</code> contract has a corresponding <code>ERC20Handler</code> to keep track of deposits on a connected bridge. This allows the user to bridge tokens publicly and a fixed denomination as seen in standard bridges. See <a href="https://chainbridge.chainsafe.io/">Chainbridge's Documentation</a> for more detail on this standard bridge architecture.</p>
+                <h1 id="merkleproofcircom">merkleProof.circom<a class="headerlink" href="#merkleproofcircom" title="Permanent link">&para;</a></h1>
+<p><code>template MerkleProof(levels)</code></p>
+<h3 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>leaf</code></li>
+<li><code>pathElements[levels]</code></li>
+<li><code>pathIndices</code></li>
+</ol>
+<h3 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>root</code></li>
+</ol>
+<h3 id="sub-gadgets">Sub-Gadgets<a class="headerlink" href="#sub-gadgets" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>switcher[levels]</code> , basically the same thing as:</li>
+<li><code>hasher[levels]</code>, two input Poseidon hasher.</li>
+</ol>
+<h3 id="functionalityhow-it-works">Functionality/How it Works<a class="headerlink" href="#functionalityhow-it-works" title="Permanent link">&para;</a></h3>
+<p>(taken from comments) Verifies that Merkle proof is correct for a given Merkle root and a leaf. </p>
+<p>Uses <code>hasher[levels]</code> to compute Merkle root from <code>pathElements[levels]</code> and the <code>leaf</code>. </p>
+<p>The <code>switcher</code> gadgets are necessary because depending on whether the Merkle proof element is on the left or right side (as indicated by <code>pathIndices[levels]</code>), the inputs to the hash function have to be re-ordered. This is because <code>Poseidon(left, right)</code> does not equal <code>Poseidon(right, left)</code>. </p>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/tornadocash/tornado-pool/blob/onchain-tree/circuits/merkleProof.circom">https://github.com/tornadocash/tornado-pool/blob/onchain-tree/circuits/merkleProof.circom</a></p>
                 
               
               
@@ -1215,41 +1055,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Overview
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../technical-roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: Technical Roadmap" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Technical Roadmap
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1272,10 +1077,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
