@@ -1179,6 +1179,9 @@ sudo snap install --classic certbot &amp;&amp; sudo ln -s /snap/bin/certbot /usr
 
 # Get the relayer code
 git clone https://github.com/webb-tools/relayer.git
+
+# Build the executable
+cd relayer &amp;&amp; cargo build --release
 </code></pre>
 <h3 id="relayer-configuration">Relayer Configuration<a class="headerlink" href="#relayer-configuration" title="Permanent link">&para;</a></h3>
 <p>Create your <code>.env</code> file in the base directory of the project. A list of potential networks to support is defined below.</p>
