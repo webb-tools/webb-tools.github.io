@@ -1163,6 +1163,7 @@
 sudo apt update &amp;&amp; sudo apt upgrade
 
 # Update snap packages
+sudo apt install -y snapd
 sudo snap install core; sudo snap refresh core
 
 # Install dependencies
@@ -1177,19 +1178,22 @@ source ~/.cargo/env
 # Install certbot
 sudo snap install --classic certbot &amp;&amp; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
+# OPTION 1: Build from source
 # Get the relayer code
 git clone https://github.com/webb-tools/relayer.git
-
-# Build the executable
 cd relayer &amp;&amp; cargo build --release
+
+# OPTION 2: Download the binary
+curl -fsSL https://git.io/get-webb-relayer.sh | sh
 </code></pre>
 <h3 id="relayer-configuration">Relayer Configuration<a class="headerlink" href="#relayer-configuration" title="Permanent link">&para;</a></h3>
 <p>Create your <code>.env</code> file in the base directory of the project. A list of potential networks to support is defined below.</p>
 <ul>
-<li>Make sure to provide the private key with funds on the appropriate network.</li>
-<li>Remove networks which you do not wish to support from below.</li>
+<li>Make sure to provide a private key with funds on the appropriate network to cover gas costs</li>
 </ul>
-<details class="example"><summary>List of supported networks .env</summary><pre><code># Mainnets
+<details class="example">
+<summary>List of supported networks .env</summary>
+<pre><code># Mainnets
 WEBB_EVM_HARMONYMAINNET0_ENABLED=true
 WEBB_EVM_SHIDEN_ENABLED=true
 
@@ -1214,33 +1218,36 @@ BERESHEET_PRIVATE_KEY=&lt;0x_PREFIXED_PRIVATE_KEY_AS_HEX_STRING&gt;
 </details>
 <h5 id="fine-tuned-configuration">Fine-tuned Configuration<a class="headerlink" href="#fine-tuned-configuration" title="Permanent link">&para;</a></h5>
 <p>All configurations in the repo can be tuned to your preference. Below is a line-by-line explanation of all configurable values for an example configuration supporting Rinkeby:</p>
-<details class="example"><summary>Rinkeby configuration</summary><pre><code>[evm.rinkeby]
-# Endpoints to archival nodes which are running for the given network
+<details class="example">
+<summary>Rinkeby configuration</summary>
+<pre><code>[evm.rinkeby]
+# MANDATORY: Endpoints to archival nodes which are running for the given network
 http-endpoint = "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
 ws-endpoint = "wss://rinkeby.infura.io/ws/v3/9aa3d95b3bc440fa88ea12eaa4456161"
-# The block explorer of the given network for clickable transactions in relayer logs
+# OPTIONAL: The block explorer of the given network for clickable transactions in relayer logs
 explorer = "https://rinkeby.etherscan.io"
-# The chain-id of the network
+# MANDATORY: The chain-id of the network
 chain-id = 4
-# The hex string private key correlating to a value in the .env file.
+# MANDATORY: The hex string private key correlating to a value in the .env file.
 private-key = "$RINKEBY_PRIVATE_KEY"
 
 # A network configuration can define multiple contracts to listen to
 [[evm.rinkeby.contracts]]
-# The 'Tornado' contract is a tornado cash implementation
+# MANDATORY: The 'Tornado' contract is a tornado cash implementation
 contract = "Tornado"
-# The address for the particular contract
+# MANDATORY: The address for the particular contract
 address = "0x626FEc5Ffa7Bf1EE8CEd7daBdE545630473E3ABb"
-# The relayer may query for previous state starting from the deployed-at block until the present block.
+# MANDATORY: The relayer may query for previous state starting from the deployed-at block until the present block.
 deployed-at = 8896800
-# The denomination for mixers - applicable for 'Tornado' and 'Anchor' contracts
+# MANDATORY: The denomination for mixers - applicable for 'Tornado' and 'Anchor' contracts
 size = 0.1
 # If the events-watcher is enabled, the relayer will poll for events of this contract at the interval and update its own
 # storage. Used for providing leaves to clients that request them, and necessary for integration in the dapp.
+# MANDATORY presence, optionally enabled
 events-watcher = { enabled = false, polling-interval = 15000 }
-# The fee defined by the relayer for sending transactions on behalf of clients.
+# MANDATORY: The fee defined by the relayer for sending transactions on behalf of clients.
 withdraw-fee-percentage = 0.05
-# Configurable gaslimit for transactions. Set this to a reasonable value for the given chain.
+# MANDATORY: Configurable gaslimit for transactions. Set this to a reasonable value for the given chain.
 withdraw-gaslimit = "0x350000"
 
 [[evm.rinkeby.contracts]]
@@ -1265,9 +1272,10 @@ linked-anchors = [
 <p>Setup the relayer as a system service:</p>
 <pre><code># Create the service file
 sudo touch /etc/systemd/system/webb-relayer.service
-
-# This assumes a config.toml file has been setup in a config/ directory
-# and the repo has been cloned in the home directory of the user
+</code></pre>
+<details class="example">
+<summary>Built from source</summary>
+<pre><code># This assumes the repo has been cloned in the home directory of the user
 # Paste the following into the service file, and replace the &lt;user&gt;:
 
 [Unit]
@@ -1279,6 +1287,21 @@ ExecStart=/home/&lt;user&gt;/relayer/target/release/webb-relayer -c /home/&lt;us
 [Install]
 WantedBy=multi-user.target
 </code></pre>
+</details>
+<details class="example">
+<summary>Downloaded binary</summary>
+<pre><code># This assumes a directory of configurations and .env file exist in a folder `/relayer` in the home directory.
+
+[Unit]
+Description=WebbRelayer
+[Service]
+Type=exec
+WorkingDirectory=/home/&lt;user&gt;/relayer
+ExecStart=/home/&lt;user&gt;/.webb/webb-relayer -c /home/&lt;user&gt;/relayer/config/ -vvv
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+</details>
 </li>
 <li>
 <p>Kick off the system service:</p>

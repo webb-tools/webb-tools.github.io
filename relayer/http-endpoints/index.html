@@ -1087,7 +1087,9 @@
 <h2 id="api-v1">API v1<a class="headerlink" href="#api-v1" title="Permanent link">&para;</a></h2>
 <h3 id="ip">IP<a class="headerlink" href="#ip" title="Permanent link">&para;</a></h3>
 <p>Relayers can let the client know of their IP address. This is informative to the client, as their privacy is potentially compromised by this information.</p>
-<details class="example"><summary>/api/v1/ip</summary><p><strong>Response Format</strong></p>
+<details class="example">
+<summary>/api/v1/ip</summary>
+<p><strong>Response Format</strong></p>
 <pre><code>{
     "ip": &lt;string&gt;
 }
@@ -1097,7 +1099,9 @@
 </details>
 <h3 id="info">Info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h3>
 <p>A client should make a call to the relayer to find which chains it supports, as well as the fees and relayer address to include in the proof generation.</p>
-<details class="example"><summary>/api/v1/info</summary><p><strong>Response Format</strong></p>
+<details class="example">
+<summary>/api/v1/info</summary>
+<p><strong>Response Format</strong></p>
 <pre><code>{ 
     evm: {
         [networkName]: {
@@ -1122,7 +1126,9 @@
 <li>chainID: A hex string for the appropriate chain id</li>
 <li>contractAddress: The contract address of the mixer to query</li>
 </ul>
-<details class="example"><summary>/api/v1/leaves/:chainId/:contractAddress</summary><p><strong>Response Format</strong></p>
+<details class="example">
+<summary>/api/v1/leaves/:chainId/:contractAddress</summary>
+<p><strong>Response Format</strong></p>
 <pre><code>{
     "leaves": [
         &lt;hex-string&gt;,

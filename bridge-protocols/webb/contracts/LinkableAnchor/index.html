@@ -1142,7 +1142,9 @@
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>An abstract contract that implements the linking functionality for bridging anchors across chains. This contract inherits all the methods of the base <code>AnchorBase.sol</code> contract.</p>
 <h2 id="constructor">Constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h2>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>constructor(
     IVerifier _verifier,
     IHasher _hasher,
@@ -1157,7 +1159,9 @@
 <h2 id="external-functions">External Functions<a class="headerlink" href="#external-functions" title="Permanent link">&para;</a></h2>
 <p>Calls to deposits require a commitment, which is a hash of some secret values. </p>
 <h4 id="sethandler">setHandler<a class="headerlink" href="#sethandler" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>setHandler(address _handler)</code></p>
 <p><strong>Requires</strong></p>
 <ul>
@@ -1165,7 +1169,9 @@
 </ul>
 </details>
 <h4 id="setbridge">setBridge<a class="headerlink" href="#setbridge" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>setBridge(address _bridge)</code></p>
 <p><strong>Requires</strong></p>
 <ul>
@@ -1173,7 +1179,9 @@
 </ul>
 </details>
 <h4 id="addedge">addEdge<a class="headerlink" href="#addedge" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>addEdge(
     uint256 sourceChainID,
     bytes32 root,
@@ -1188,7 +1196,9 @@
 <p>EdgeAddition, RootHistoryUpdate</p>
 </details>
 <h4 id="updateedge">updateEdge<a class="headerlink" href="#updateedge" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>updateEdge(
     uint256 sourceChainID,
     bytes32 root,

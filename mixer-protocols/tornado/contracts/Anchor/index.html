@@ -1308,13 +1308,17 @@
 <h4 id="commitments">commitments<a class="headerlink" href="#commitments" title="Permanent link">&para;</a></h4>
 <p><strong>Type:</strong> <code>public mapping(bytes32 =&gt; bool)</code></p>
 <h2 id="constructor">Constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h2>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>constructor(IVerifier _verifier, IHasher _hasher, uint256 _denomination, uint256 _treeHeight) MerkleTreeWithHistory(_merkleTreeHeight, _hasher)</code></p>
 </details>
 <h2 id="external-functions">External Functions<a class="headerlink" href="#external-functions" title="Permanent link">&para;</a></h2>
 <p>Calls to deposits require a commitment, which is a hash of some secret values. </p>
 <h4 id="deposit">Deposit<a class="headerlink" href="#deposit" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>deposit(bytes32 _commitment)</code></p>
 <p><strong>Requires</strong></p>
 <ul>
@@ -1324,7 +1328,9 @@
 <p>Deposit</p>
 </details>
 <h4 id="withdraw">Withdraw<a class="headerlink" href="#withdraw" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>withdraw(address _recipient, address _relayer, uint256 _fee, uint256 _refund)</code></p>
 <p><strong>Requires</strong></p>
 <ul>
@@ -1338,11 +1344,15 @@
 </details>
 <h2 id="view-functions">View Functions<a class="headerlink" href="#view-functions" title="Permanent link">&para;</a></h2>
 <h4 id="isspent">isSpent<a class="headerlink" href="#isspent" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>isSpent(bytes32 _nullifierHash) public view returns (bool)</code></p>
 </details>
 <h4 id="isspentarray">isSpentArray<a class="headerlink" href="#isspentarray" title="Permanent link">&para;</a></h4>
-<details class="example"><summary>Details</summary><p><strong>Signature</strong></p>
+<details class="example">
+<summary>Details</summary>
+<p><strong>Signature</strong></p>
 <p><code>isSpentArray(bytes32[] calldata _nullifierHashes) external view returns (bool[] memory spent)</code></p>
 </details>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
