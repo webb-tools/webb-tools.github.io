@@ -2,162 +2,162 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.webb.tools/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/architecture/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/deployments/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/governance/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/technical-roadmap/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/circuits/CommitmentHasher/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/circuits/DualMux/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/circuits/ManyMerkleTreeChecker/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/circuits/SetMembership/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/contracts/Anchor/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/contracts/AnchorBase/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/contracts/LinkableAnchor/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/contracts/MerkleTreePoseidon/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/contracts/MerkleTreeWithHistoryPoseidon/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/contracts/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/bridge-protocols/webb/pallets/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/deployments/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/contracts/Anchor/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/contracts/IHasher/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/contracts/IVerifier/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/contracts/MerkleTreeWithHistory/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/mixer-protocols/tornado/contracts/NativeAnchor/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/relayer/http-endpoints/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/relayer/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/relayer/setup/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/relayer/websockets/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/repos/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/shielded-pool-protocols/tornado-pool/overview/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/shielded-pool-protocols/tornado-pool/circuits/keypair/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.webb.tools/shielded-pool-protocols/tornado-pool/circuits/merkleProof/</loc>
-         <lastmod>2021-11-16</lastmod>
+         <lastmod>2021-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
